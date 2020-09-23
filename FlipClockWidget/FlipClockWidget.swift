@@ -74,119 +74,9 @@ struct FlipClockWidgetEntryView : View {
     
     var body: some View {
         switch family {
-        case .systemSmall:
-            let num = FlipClockWidgetEntryView.dateFormatHH.string(from: entry.date.addingTimeInterval(1.0))
-            Card(text: num)
         case .systemMedium:
             let hhmm = FlipClockWidgetEntryView.dateFormatHHMM.string(from: entry.date)
-            if hhmm.count != 4 {
-                
-            } else {
-                clockView(text: hhmm)
-            }
-//            ZStack {
-//                HStack {
-//                    Spacer(minLength: 0)
-//
-//                    ZStack {
-//                        if hhmm.hasPrefix("0") {
-//                            let h = String(hhmm[hhmm.index(hhmm.startIndex, offsetBy: 1)...hhmm.index(hhmm.startIndex, offsetBy: 1)])
-//                            Card(text: h)
-//                        } else {
-//                            let hh = String(hhmm.prefix(2))
-//                            Card(text: hh)
-//                        }
-//
-//                        let ampm = String(hhmm.suffix(2))
-//
-//                        Text(ampm)
-//                            .font(.custom("Helvetica Neue", size: 15))
-//                            .fontWeight(.medium)
-//                            .padding(.top, ampm == "AM" ? -59 : 99)
-//                            .padding(.leading, -55.0)
-//                    }
-//
-//
-//
-//                    Spacer(minLength: 0)
-//
-//                    Group {
-//                        Color("LightGray")
-//                            .edgesIgnoringSafeArea(.all)
-//                    }.frame(minWidth: 16, maxWidth: 16, minHeight: 0, maxHeight: .infinity, alignment: .center)
-//                    Spacer(minLength: 0)
-//
-//                    let mm = String(hhmm[hhmm.index(hhmm.startIndex, offsetBy: 2)...hhmm.index(hhmm.startIndex, offsetBy: 3)])
-//                    Card(text: mm)
-//
-//                    Spacer(minLength: 0)
-//                }
-//
-//            }
-        case .systemLarge:
-            let hhmm = FlipClockWidgetEntryView.dateFormatMMDDHHMMSS.string(from: entry.date)
-            VStack {
-                Spacer(minLength: 0)
-                HStack {
-                    Spacer(minLength: 0)
-                    if hhmm.hasPrefix("0") {
-                        let m = String(hhmm[hhmm.index(hhmm.startIndex, offsetBy: 1)...hhmm.index(hhmm.startIndex, offsetBy: 1)])
-                        Card(text: m)
-                    } else {
-                        let mm = String(hhmm.prefix(2))
-                        Card(text: mm)
-                    }
-                    Spacer(minLength: 0)
-                    
-                    if String(hhmm[hhmm.index(hhmm.startIndex, offsetBy: 2)...hhmm.index(hhmm.startIndex, offsetBy: 2)]) == "0" {
-                        let h = String(hhmm[hhmm.index(hhmm.startIndex, offsetBy: 3)...hhmm.index(hhmm.startIndex, offsetBy: 3)])
-                        Card(text: h)
-                    } else {
-                        let dd = String(hhmm[hhmm.index(hhmm.startIndex, offsetBy: 2)...hhmm.index(hhmm.startIndex, offsetBy: 3)])
-                        Card(text: dd)
-                    }
-                    
-
-                    
-                    Spacer(minLength: 0)
-                }
-                
-                Spacer(minLength: 0)
-                Spacer(minLength: 0)
-        
-                HStack {
-                    Spacer(minLength: 0)
-                    
-                    ZStack {
-
-                        if String(hhmm[hhmm.index(hhmm.startIndex, offsetBy: 4)...hhmm.index(hhmm.startIndex, offsetBy: 4)]) == "0" {
-                            let h = String(hhmm[hhmm.index(hhmm.startIndex, offsetBy: 5)...hhmm.index(hhmm.startIndex, offsetBy: 5)])
-                            Card(text: h)
-                        } else {
-                            let hh = String(hhmm[hhmm.index(hhmm.startIndex, offsetBy: 4)...hhmm.index(hhmm.startIndex, offsetBy: 5)])
-                            Card(text: hh)
-                        }
-                        
-                        let ampm = String(hhmm.suffix(2))
-                        
-                        Text(ampm)
-                            .font(.custom("Helvetica Neue", size: 15))
-                            .fontWeight(.medium)
-                            .padding(.top, ampm == "AM" ? -59 : 99)
-                            .padding(.leading, -55.0)
-                    }
-                    
-      
-                    
-                    Spacer(minLength: 0)
-
-                    let mm = String(hhmm[hhmm.index(hhmm.startIndex, offsetBy: 6)...hhmm.index(hhmm.startIndex, offsetBy: 7)])
-                    Card(text: mm)
-                    
-                    Spacer(minLength: 0)
-                }
-                Spacer(minLength: 0)
-            }
+            clockView(text: hhmm)
         default:
             Text("韩")
                 .font(.custom("Helvetica Neu Bold", size: 100))
@@ -230,9 +120,12 @@ struct FlipClockWidget: Widget {
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
             FlipClockWidgetEntryView(entry: entry)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(Color.black)
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
+        .supportedFamilies([.systemMedium])
     }
 }
 
@@ -241,6 +134,8 @@ struct FlipClockWidget_Previews: PreviewProvider {
 //        FlipClockWidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
 //            .previewContext(WidgetPreviewContext(family: .systemSmall))
         FlipClockWidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color.black)
             .previewContext(WidgetPreviewContext(family: .systemMedium))
 //        FlipClockWidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
 //            .previewContext(WidgetPreviewContext(family: .systemLarge))

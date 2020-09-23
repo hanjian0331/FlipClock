@@ -51,7 +51,7 @@ struct clockView: View {
                 .overlay(
                     GeometryReader { geometry in
                         let w = geometry.size.width * 12.0 / 394.0
-                        let h = w * 120.0 / 24.0;
+                        let h = w * 120.0 / 24.0
                         
                         HStack(spacing: 0) {
                             Image("flip_axle")
@@ -100,7 +100,7 @@ struct clockView: View {
                 .overlay(
                     GeometryReader { geometry in
                         let w = geometry.size.width * 12.0 / 394.0
-                        let h = w * 120.0 / 24.0;
+                        let h = w * 120.0 / 24.0
                         
                         HStack(spacing: 0) {
                             Image("flip_axle")
@@ -115,6 +115,8 @@ struct clockView: View {
                     }
                 )
             }
+                
+                
         }.padding(.all, 8)
     }
 }

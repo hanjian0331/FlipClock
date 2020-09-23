@@ -469,7 +469,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hj.Flip-Clock";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hj.FlipClock;
 				PRODUCT_NAME = "Flip Clock";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -492,7 +492,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hj.Flip-Clock";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hj.FlipClock;
 				PRODUCT_NAME = "Flip Clock";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -518,7 +518,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hj.Flip-Clock";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hj.FlipClock;
 				PRODUCT_NAME = "Flip Clock";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -542,7 +542,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hj.Flip-Clock";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hj.FlipClock;
 				PRODUCT_NAME = "Flip Clock";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -563,7 +563,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hj.Flip-Clock.FlipClockWidget";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hj.FlipClock.FlipClockWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -586,7 +586,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hj.Flip-Clock.FlipClockWidget";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hj.FlipClock.FlipClockWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
