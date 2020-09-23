@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74794E982510CF2800BBC1BC /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74794E972510CF2800BBC1BC /* Color.xcassets */; };
+		74794E992510CF2800BBC1BC /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74794E972510CF2800BBC1BC /* Color.xcassets */; };
+		74794E9A2510CF2800BBC1BC /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74794E972510CF2800BBC1BC /* Color.xcassets */; };
+		74AB3BD82518DF5C00FD29C7 /* clockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AB3BD72518DF5C00FD29C7 /* clockView.swift */; };
+		74AB3BD92518DF5C00FD29C7 /* clockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AB3BD72518DF5C00FD29C7 /* clockView.swift */; };
+		74AB3BDA2518DF5C00FD29C7 /* clockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AB3BD72518DF5C00FD29C7 /* clockView.swift */; };
+		74E9B4B524FB4AB300478B45 /* Flip_ClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9B4A224FB4AB300478B45 /* Flip_ClockApp.swift */; };
+		74E9B4B624FB4AB300478B45 /* Flip_ClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9B4A224FB4AB300478B45 /* Flip_ClockApp.swift */; };
+		74E9B4B724FB4AB300478B45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9B4A324FB4AB300478B45 /* ContentView.swift */; };
+		74E9B4B824FB4AB300478B45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9B4A324FB4AB300478B45 /* ContentView.swift */; };
+		74E9B4B924FB4AB300478B45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E9B4A424FB4AB300478B45 /* Assets.xcassets */; };
+		74E9B4BA24FB4AB300478B45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E9B4A424FB4AB300478B45 /* Assets.xcassets */; };
+		74E9B4CA24FB4B7300478B45 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E9B4C924FB4B7300478B45 /* WidgetKit.framework */; };
+		74E9B4CC24FB4B7300478B45 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E9B4CB24FB4B7300478B45 /* SwiftUI.framework */; };
+		74E9B4CF24FB4B7300478B45 /* FlipClockWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9B4CE24FB4B7300478B45 /* FlipClockWidget.swift */; };
+		74E9B4D224FB4B7400478B45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E9B4D124FB4B7400478B45 /* Assets.xcassets */; };
+		74E9B4D424FB4B7400478B45 /* FlipClockWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 74E9B4D024FB4B7300478B45 /* FlipClockWidget.intentdefinition */; };
+		74E9B4D524FB4B7400478B45 /* FlipClockWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 74E9B4D024FB4B7300478B45 /* FlipClockWidget.intentdefinition */; };
+		74E9B4D824FB4B7400478B45 /* FlipClockWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 74E9B4C724FB4B7300478B45 /* FlipClockWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74E9B4D624FB4B7400478B45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74E9B49D24FB4AB300478B45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74E9B4C624FB4B7300478B45;
+			remoteInfo = FlipClockWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		74E9B4D924FB4B7400478B45 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				74E9B4D824FB4B7400478B45 /* FlipClockWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		74794E972510CF2800BBC1BC /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		74AB3BD72518DF5C00FD29C7 /* clockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clockView.swift; sourceTree = "<group>"; };
+		74E9B4A224FB4AB300478B45 /* Flip_ClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flip_ClockApp.swift; sourceTree = "<group>"; };
+		74E9B4A324FB4AB300478B45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		74E9B4A424FB4AB300478B45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74E9B4A924FB4AB300478B45 /* Flip Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flip Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74E9B4AC24FB4AB300478B45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74E9B4B124FB4AB300478B45 /* Flip Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flip Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74E9B4B324FB4AB300478B45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74E9B4B424FB4AB300478B45 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		74E9B4C724FB4B7300478B45 /* FlipClockWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FlipClockWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		74E9B4C924FB4B7300478B45 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		74E9B4CB24FB4B7300478B45 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		74E9B4CE24FB4B7300478B45 /* FlipClockWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipClockWidget.swift; sourceTree = "<group>"; };
+		74E9B4D024FB4B7300478B45 /* FlipClockWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = FlipClockWidget.intentdefinition; sourceTree = "<group>"; };
+		74E9B4D124FB4B7400478B45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74E9B4D324FB4B7400478B45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74E9B4A624FB4AB300478B45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74E9B4AE24FB4AB300478B45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74E9B4C424FB4B7300478B45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74E9B4CC24FB4B7300478B45 /* SwiftUI.framework in Frameworks */,
+				74E9B4CA24FB4B7300478B45 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74E9B49C24FB4AB300478B45 = {
+			isa = PBXGroup;
+			children = (
+				74E9B4A124FB4AB300478B45 /* Shared */,
+				74E9B4AB24FB4AB300478B45 /* iOS */,
+				74E9B4B224FB4AB300478B45 /* macOS */,
+				74E9B4CD24FB4B7300478B45 /* FlipClockWidget */,
+				74E9B4C824FB4B7300478B45 /* Frameworks */,
+				74E9B4AA24FB4AB300478B45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74E9B4A124FB4AB300478B45 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				74E9B4A224FB4AB300478B45 /* Flip_ClockApp.swift */,
+				74AB3BD72518DF5C00FD29C7 /* clockView.swift */,
+				74E9B4A324FB4AB300478B45 /* ContentView.swift */,
+				74E9B4A424FB4AB300478B45 /* Assets.xcassets */,
+				74794E972510CF2800BBC1BC /* Color.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		74E9B4AA24FB4AB300478B45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74E9B4A924FB4AB300478B45 /* Flip Clock.app */,
+				74E9B4B124FB4AB300478B45 /* Flip Clock.app */,
+				74E9B4C724FB4B7300478B45 /* FlipClockWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74E9B4AB24FB4AB300478B45 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				74E9B4AC24FB4AB300478B45 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		74E9B4B224FB4AB300478B45 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				74E9B4B324FB4AB300478B45 /* Info.plist */,
+				74E9B4B424FB4AB300478B45 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		74E9B4C824FB4B7300478B45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74E9B4C924FB4B7300478B45 /* WidgetKit.framework */,
+				74E9B4CB24FB4B7300478B45 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74E9B4CD24FB4B7300478B45 /* FlipClockWidget */ = {
+			isa = PBXGroup;
+			children = (
+				74E9B4CE24FB4B7300478B45 /* FlipClockWidget.swift */,
+				74E9B4D024FB4B7300478B45 /* FlipClockWidget.intentdefinition */,
+				74E9B4D124FB4B7400478B45 /* Assets.xcassets */,
+				74E9B4D324FB4B7400478B45 /* Info.plist */,
+			);
+			path = FlipClockWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74E9B4A824FB4AB300478B45 /* Flip Clock (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74E9B4BD24FB4AB300478B45 /* Build configuration list for PBXNativeTarget "Flip Clock (iOS)" */;
+			buildPhases = (
+				74E9B4A524FB4AB300478B45 /* Sources */,
+				74E9B4A624FB4AB300478B45 /* Frameworks */,
+				74E9B4A724FB4AB300478B45 /* Resources */,
+				74E9B4D924FB4B7400478B45 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74E9B4D724FB4B7400478B45 /* PBXTargetDependency */,
+			);
+			name = "Flip Clock (iOS)";
+			productName = "Flip Clock (iOS)";
+			productReference = 74E9B4A924FB4AB300478B45 /* Flip Clock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74E9B4B024FB4AB300478B45 /* Flip Clock (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74E9B4C024FB4AB300478B45 /* Build configuration list for PBXNativeTarget "Flip Clock (macOS)" */;
+			buildPhases = (
+				74E9B4AD24FB4AB300478B45 /* Sources */,
+				74E9B4AE24FB4AB300478B45 /* Frameworks */,
+				74E9B4AF24FB4AB300478B45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Flip Clock (macOS)";
+			productName = "Flip Clock (macOS)";
+			productReference = 74E9B4B124FB4AB300478B45 /* Flip Clock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74E9B4C624FB4B7300478B45 /* FlipClockWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74E9B4DC24FB4B7400478B45 /* Build configuration list for PBXNativeTarget "FlipClockWidgetExtension" */;
+			buildPhases = (
+				74E9B4C324FB4B7300478B45 /* Sources */,
+				74E9B4C424FB4B7300478B45 /* Frameworks */,
+				74E9B4C524FB4B7300478B45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlipClockWidgetExtension;
+			productName = FlipClockWidgetExtension;
+			productReference = 74E9B4C724FB4B7300478B45 /* FlipClockWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74E9B49D24FB4AB300478B45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					74E9B4A824FB4AB300478B45 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					74E9B4B024FB4AB300478B45 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					74E9B4C624FB4B7300478B45 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 74E9B4A024FB4AB300478B45 /* Build configuration list for PBXProject "Flip Clock" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74E9B49C24FB4AB300478B45;
+			productRefGroup = 74E9B4AA24FB4AB300478B45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74E9B4A824FB4AB300478B45 /* Flip Clock (iOS) */,
+				74E9B4B024FB4AB300478B45 /* Flip Clock (macOS) */,
+				74E9B4C624FB4B7300478B45 /* FlipClockWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74E9B4A724FB4AB300478B45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74E9B4B924FB4AB300478B45 /* Assets.xcassets in Resources */,
+				74794E982510CF2800BBC1BC /* Color.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74E9B4AF24FB4AB300478B45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74E9B4BA24FB4AB300478B45 /* Assets.xcassets in Resources */,
+				74794E992510CF2800BBC1BC /* Color.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74E9B4C524FB4B7300478B45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74E9B4D224FB4B7400478B45 /* Assets.xcassets in Resources */,
+				74794E9A2510CF2800BBC1BC /* Color.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74E9B4A524FB4AB300478B45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74E9B4B724FB4AB300478B45 /* ContentView.swift in Sources */,
+				74AB3BD82518DF5C00FD29C7 /* clockView.swift in Sources */,
+				74E9B4D524FB4B7400478B45 /* FlipClockWidget.intentdefinition in Sources */,
+				74E9B4B524FB4AB300478B45 /* Flip_ClockApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74E9B4AD24FB4AB300478B45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74E9B4B824FB4AB300478B45 /* ContentView.swift in Sources */,
+				74AB3BD92518DF5C00FD29C7 /* clockView.swift in Sources */,
+				74E9B4B624FB4AB300478B45 /* Flip_ClockApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74E9B4C324FB4B7300478B45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74E9B4D424FB4B7400478B45 /* FlipClockWidget.intentdefinition in Sources */,
+				74AB3BDA2518DF5C00FD29C7 /* clockView.swift in Sources */,
+				74E9B4CF24FB4B7300478B45 /* FlipClockWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74E9B4D724FB4B7400478B45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74E9B4C624FB4B7300478B45 /* FlipClockWidgetExtension */;
+			targetProxy = 74E9B4D624FB4B7400478B45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		74E9B4BB24FB4AB300478B45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		74E9B4BC24FB4AB300478B45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		74E9B4BE24FB4AB300478B45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CH6QR5SEAC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hj.Flip-Clock";
+				PRODUCT_NAME = "Flip Clock";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		74E9B4BF24FB4AB300478B45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CH6QR5SEAC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hj.Flip-Clock";
+				PRODUCT_NAME = "Flip Clock";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74E9B4C124FB4AB300478B45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CH6QR5SEAC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hj.Flip-Clock";
+				PRODUCT_NAME = "Flip Clock";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		74E9B4C224FB4AB300478B45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CH6QR5SEAC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hj.Flip-Clock";
+				PRODUCT_NAME = "Flip Clock";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		74E9B4DA24FB4B7400478B45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CH6QR5SEAC;
+				INFOPLIST_FILE = FlipClockWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hj.Flip-Clock.FlipClockWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		74E9B4DB24FB4B7400478B45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CH6QR5SEAC;
+				INFOPLIST_FILE = FlipClockWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hj.Flip-Clock.FlipClockWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74E9B4A024FB4AB300478B45 /* Build configuration list for PBXProject "Flip Clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74E9B4BB24FB4AB300478B45 /* Debug */,
+				74E9B4BC24FB4AB300478B45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74E9B4BD24FB4AB300478B45 /* Build configuration list for PBXNativeTarget "Flip Clock (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74E9B4BE24FB4AB300478B45 /* Debug */,
+				74E9B4BF24FB4AB300478B45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74E9B4C024FB4AB300478B45 /* Build configuration list for PBXNativeTarget "Flip Clock (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74E9B4C124FB4AB300478B45 /* Debug */,
+				74E9B4C224FB4AB300478B45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74E9B4DC24FB4B7400478B45 /* Build configuration list for PBXNativeTarget "FlipClockWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74E9B4DA24FB4B7400478B45 /* Debug */,
+				74E9B4DB24FB4B7400478B45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74E9B49D24FB4AB300478B45 /* Project object */;
+}
