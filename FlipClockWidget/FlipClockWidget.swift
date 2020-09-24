@@ -64,7 +64,7 @@ struct FlipClockWidgetEntryView : View {
     static let dateFormatHHMM: DateFormatter = {
         let formatter = DateFormatter()
         formatter.locale = Locale(identifier: "en_US_POSIX")
-        formatter.dateFormat = "hhmm"
+        formatter.dateFormat = "hhmma"
         formatter.amSymbol = "AM"
         formatter.pmSymbol = "PM"
         return formatter
@@ -86,31 +86,31 @@ struct FlipClockWidgetEntryView : View {
     }
 }
 
-struct Card: View {
-    
-    var text: String
-    
-    var body: some View {
-        ZStack {
-            ZStack {
-                Color("LightGray")
-                    .edgesIgnoringSafeArea(.all)
-            }.frame(width: 140, height: 140).cornerRadius(15)
-            
-
-            Text(text)
-                .font(.custom("Helvetica Neue", size: 100))
-                .fontWeight(.medium)
-            
-            Group {
-                Color("Background")
-                    .edgesIgnoringSafeArea(.all)
-            }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 3, maxHeight: 3, alignment: .center)
-        }
-            
-    }
-    
-}
+//struct Card: View {
+//    
+//    var text: String
+//    
+//    var body: some View {
+//        ZStack {
+//            ZStack {
+//                Color("LightGray")
+//                    .edgesIgnoringSafeArea(.all)
+//            }.frame(width: 140, height: 140).cornerRadius(15)
+//            
+//
+//            Text(text)
+//                .font(.custom("Helvetica Neue", size: 100))
+//                .fontWeight(.medium)
+//            
+//            Group {
+//                Color("Background")
+//                    .edgesIgnoringSafeArea(.all)
+//            }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 3, maxHeight: 3, alignment: .center)
+//        }
+//            
+//    }
+//    
+//}
 
 
 @main
