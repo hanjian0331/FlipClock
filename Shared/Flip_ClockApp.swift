@@ -7,12 +7,30 @@
 
 import SwiftUI
 
+
 @main
 struct Flip_ClockApp: App {
+
+
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
+    @State private var date = Date()
+    
     var body: some Scene {
         WindowGroup {
-            clockView(text: "1224")
+            ZStack {
+                Color.black.edgesIgnoringSafeArea(.all)
+                ClockView(date: date)
+            }
+            .onReceive(timer) { time in
+                date = Date()
+            }
+//            .frame(maxWidth: .infinity, maxHeight: .infinity)
+//            .background(Color.black)
+            .statusBar(hidden: true)
+            .environmentObject(OrientationInfo())
         }
     }
 }
+
 

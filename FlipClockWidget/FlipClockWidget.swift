@@ -49,34 +49,33 @@ struct SimpleEntry: TimelineEntry {
 
 struct FlipClockWidgetEntryView : View {
     var entry: Provider.Entry
-    static let dateFormatHH: DateFormatter = {
-            let formatter = DateFormatter()
-            formatter.dateFormat = "HH"
-            return formatter }()
-    static let dateFormatMMDDHHMMSS: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "en_US_POSIX")
-        formatter.dateFormat = "MMddhhmma"
-        formatter.amSymbol = "AM"
-        formatter.pmSymbol = "PM"
-        return formatter
-    }()
-    static let dateFormatHHMM: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "en_US_POSIX")
-        formatter.dateFormat = "hhmma"
-        formatter.amSymbol = "AM"
-        formatter.pmSymbol = "PM"
-        return formatter
-    }()
+//    static let dateFormatHH: DateFormatter = {
+//            let formatter = DateFormatter()
+//            formatter.dateFormat = "HH"
+//            return formatter }()
+//    static let dateFormatMMDDHHMMSS: DateFormatter = {
+//        let formatter = DateFormatter()
+//        formatter.locale = Locale(identifier: "en_US_POSIX")
+//        formatter.dateFormat = "MMddhhmma"
+//        formatter.amSymbol = "AM"
+//        formatter.pmSymbol = "PM"
+//        return formatter
+//    }()
+//    static let dateFormatHHMM: DateFormatter = {
+//        let formatter = DateFormatter()
+//        formatter.locale = Locale(identifier: "en_US_POSIX")
+//        formatter.dateFormat = "hhmma"
+//        formatter.amSymbol = "AM"
+//        formatter.pmSymbol = "PM"
+//        return formatter
+//    }()
     
     @Environment(\.widgetFamily) var family
     
     var body: some View {
         switch family {
         case .systemMedium:
-            let hhmm = FlipClockWidgetEntryView.dateFormatHHMM.string(from: entry.date)
-            clockView(text: hhmm)
+            ClockWidgetView(date: entry.date)
         default:
             Text("韩")
                 .font(.custom("Helvetica Neu Bold", size: 100))

@@ -3,23 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		74794E982510CF2800BBC1BC /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74794E972510CF2800BBC1BC /* Color.xcassets */; };
 		74794E992510CF2800BBC1BC /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74794E972510CF2800BBC1BC /* Color.xcassets */; };
 		74794E9A2510CF2800BBC1BC /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74794E972510CF2800BBC1BC /* Color.xcassets */; };
-		74AB3BD82518DF5C00FD29C7 /* clockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AB3BD72518DF5C00FD29C7 /* clockView.swift */; };
-		74AB3BD92518DF5C00FD29C7 /* clockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AB3BD72518DF5C00FD29C7 /* clockView.swift */; };
-		74AB3BDA2518DF5C00FD29C7 /* clockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AB3BD72518DF5C00FD29C7 /* clockView.swift */; };
+		74AB3BD82518DF5C00FD29C7 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AB3BD72518DF5C00FD29C7 /* ClockView.swift */; };
+		74AB3BD92518DF5C00FD29C7 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AB3BD72518DF5C00FD29C7 /* ClockView.swift */; };
+		74AB3BDA2518DF5C00FD29C7 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AB3BD72518DF5C00FD29C7 /* ClockView.swift */; };
 		74E9B4B524FB4AB300478B45 /* Flip_ClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9B4A224FB4AB300478B45 /* Flip_ClockApp.swift */; };
 		74E9B4B624FB4AB300478B45 /* Flip_ClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9B4A224FB4AB300478B45 /* Flip_ClockApp.swift */; };
 		74E9B4B724FB4AB300478B45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9B4A324FB4AB300478B45 /* ContentView.swift */; };
 		74E9B4B824FB4AB300478B45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9B4A324FB4AB300478B45 /* ContentView.swift */; };
 		74E9B4B924FB4AB300478B45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E9B4A424FB4AB300478B45 /* Assets.xcassets */; };
 		74E9B4BA24FB4AB300478B45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E9B4A424FB4AB300478B45 /* Assets.xcassets */; };
-		74E9B4CA24FB4B7300478B45 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E9B4C924FB4B7300478B45 /* WidgetKit.framework */; };
+		74E9B4CA24FB4B7300478B45 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E9B4C924FB4B7300478B45 /* WidgetKit.framework */; platformFilter = ios; };
 		74E9B4CC24FB4B7300478B45 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E9B4CB24FB4B7300478B45 /* SwiftUI.framework */; };
 		74E9B4CF24FB4B7300478B45 /* FlipClockWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9B4CE24FB4B7300478B45 /* FlipClockWidget.swift */; };
 		74E9B4D224FB4B7400478B45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E9B4D124FB4B7400478B45 /* Assets.xcassets */; };
@@ -54,7 +54,7 @@
 
 /* Begin PBXFileReference section */
 		74794E972510CF2800BBC1BC /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
-		74AB3BD72518DF5C00FD29C7 /* clockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clockView.swift; sourceTree = "<group>"; };
+		74AB3BD72518DF5C00FD29C7 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		74E9B4A224FB4AB300478B45 /* Flip_ClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flip_ClockApp.swift; sourceTree = "<group>"; };
 		74E9B4A324FB4AB300478B45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		74E9B4A424FB4AB300478B45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				74E9B4A224FB4AB300478B45 /* Flip_ClockApp.swift */,
-				74AB3BD72518DF5C00FD29C7 /* clockView.swift */,
+				74AB3BD72518DF5C00FD29C7 /* ClockView.swift */,
 				74E9B4A324FB4AB300478B45 /* ContentView.swift */,
 				74E9B4A424FB4AB300478B45 /* Assets.xcassets */,
 				74794E972510CF2800BBC1BC /* Color.xcassets */,
@@ -302,7 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74E9B4B724FB4AB300478B45 /* ContentView.swift in Sources */,
-				74AB3BD82518DF5C00FD29C7 /* clockView.swift in Sources */,
+				74AB3BD82518DF5C00FD29C7 /* ClockView.swift in Sources */,
 				74E9B4D524FB4B7400478B45 /* FlipClockWidget.intentdefinition in Sources */,
 				74E9B4B524FB4AB300478B45 /* Flip_ClockApp.swift in Sources */,
 			);
@@ -313,7 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74E9B4B824FB4AB300478B45 /* ContentView.swift in Sources */,
-				74AB3BD92518DF5C00FD29C7 /* clockView.swift in Sources */,
+				74AB3BD92518DF5C00FD29C7 /* ClockView.swift in Sources */,
 				74E9B4B624FB4AB300478B45 /* Flip_ClockApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,7 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74E9B4D424FB4B7400478B45 /* FlipClockWidget.intentdefinition in Sources */,
-				74AB3BDA2518DF5C00FD29C7 /* clockView.swift in Sources */,
+				74AB3BDA2518DF5C00FD29C7 /* ClockView.swift in Sources */,
 				74E9B4CF24FB4B7300478B45 /* FlipClockWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,6 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hj.FlipClock;
 				PRODUCT_NAME = "Flip Clock";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -495,6 +496,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hj.FlipClock;
 				PRODUCT_NAME = "Flip Clock";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -567,6 +569,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -590,6 +593,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
