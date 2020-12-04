@@ -22,6 +22,8 @@
 		745ACEBA25330548004D7D37 /* FlipClockWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 745ACEB525330548004D7D37 /* FlipClockWidget.intentdefinition */; };
 		745ACEBD25330548004D7D37 /* FlipClockWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 745ACEAC25330548004D7D37 /* FlipClockWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		745ACEC425330571004D7D37 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745ACEA425330417004D7D37 /* ClockView.swift */; };
+		74CE3F0D257A9C8C00016FFB /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CE3F0C257A9C8C00016FFB /* Media.xcassets */; };
+		74CE3F0E257A9C8C00016FFB /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CE3F0C257A9C8C00016FFB /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,7 @@
 		745ACEB825330548004D7D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74B3F531257380960055F247 /* FlipClock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlipClock.entitlements; sourceTree = "<group>"; };
 		74B3F532257380960055F247 /* FlipClockWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlipClockWidgetExtension.entitlements; sourceTree = "<group>"; };
+		74CE3F0C257A9C8C00016FFB /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,7 @@
 				745ACEA125330412004D7D37 /* OrientationLockedController.swift */,
 				745ACEA425330417004D7D37 /* ClockView.swift */,
 				745ACE92253303F7004D7D37 /* Assets.xcassets */,
+				74CE3F0C257A9C8C00016FFB /* Media.xcassets */,
 				745ACE97253303F7004D7D37 /* LaunchScreen.storyboard */,
 				745ACE9A253303F7004D7D37 /* Info.plist */,
 				745ACE94253303F7004D7D37 /* Preview Content */,
@@ -237,6 +241,7 @@
 			files = (
 				745ACE99253303F7004D7D37 /* LaunchScreen.storyboard in Resources */,
 				745ACE96253303F7004D7D37 /* Preview Assets.xcassets in Resources */,
+				74CE3F0D257A9C8C00016FFB /* Media.xcassets in Resources */,
 				745ACE93253303F7004D7D37 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74CE3F0E257A9C8C00016FFB /* Media.xcassets in Resources */,
 				745ACEB725330548004D7D37 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,7 +430,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FlipClock/FlipClock.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 1.2;
 				DEVELOPMENT_ASSET_PATHS = "\"FlipClock/Preview Content\"";
 				DEVELOPMENT_TEAM = CH6QR5SEAC;
 				ENABLE_PREVIEWS = YES;
@@ -451,7 +457,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FlipClock/FlipClock.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 1.2;
 				DEVELOPMENT_ASSET_PATHS = "\"FlipClock/Preview Content\"";
 				DEVELOPMENT_TEAM = CH6QR5SEAC;
 				ENABLE_PREVIEWS = YES;
@@ -477,7 +483,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = FlipClockWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 1.2;
 				DEVELOPMENT_TEAM = CH6QR5SEAC;
 				INFOPLIST_FILE = FlipClockWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -503,7 +509,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = FlipClockWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 1.2;
 				DEVELOPMENT_TEAM = CH6QR5SEAC;
 				INFOPLIST_FILE = FlipClockWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
