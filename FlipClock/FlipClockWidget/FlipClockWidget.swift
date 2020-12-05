@@ -36,7 +36,7 @@ struct Provider: IntentTimelineProvider {
             entries.append(entry)
         }
 
-        let timeline = Timeline(entries: entries, policy: .after(currentDate+oneMinute*60))
+        let timeline = Timeline(entries: entries, policy: .after(currentDate+60*oneMinute))
         completion(timeline)
     }
 }

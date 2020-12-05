@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7417A177257B5A580001C774 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CE3F0C257A9C8C00016FFB /* Media.xcassets */; };
 		745ACE8D253303F7004D7D37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745ACE8C253303F7004D7D37 /* AppDelegate.swift */; };
 		745ACE8F253303F7004D7D37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745ACE8E253303F7004D7D37 /* SceneDelegate.swift */; };
 		745ACE91253303F7004D7D37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745ACE90253303F7004D7D37 /* ContentView.swift */; };
@@ -23,7 +24,6 @@
 		745ACEBD25330548004D7D37 /* FlipClockWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 745ACEAC25330548004D7D37 /* FlipClockWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		745ACEC425330571004D7D37 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745ACEA425330417004D7D37 /* ClockView.swift */; };
 		74CE3F0D257A9C8C00016FFB /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CE3F0C257A9C8C00016FFB /* Media.xcassets */; };
-		74CE3F0E257A9C8C00016FFB /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CE3F0C257A9C8C00016FFB /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,12 +59,11 @@
 		745ACE95253303F7004D7D37 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		745ACE98253303F7004D7D37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		745ACE9A253303F7004D7D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		745ACEA125330412004D7D37 /* OrientationLockedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrientationLockedController.swift; sourceTree = "<group>"; };
 		745ACEA425330417004D7D37 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		745ACEAC25330548004D7D37 /* FlipClockWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FlipClockWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		745ACEAE25330548004D7D37 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		745ACEB025330548004D7D37 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		745ACEB325330548004D7D37 /* FlipClockWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipClockWidget.swift; sourceTree = "<group>"; };
+		745ACEB325330548004D7D37 /* FlipClockWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipClockWidget.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		745ACEB525330548004D7D37 /* FlipClockWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = FlipClockWidget.intentdefinition; sourceTree = "<group>"; };
 		745ACEB625330548004D7D37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		745ACEB825330548004D7D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -120,7 +119,6 @@
 				745ACE8C253303F7004D7D37 /* AppDelegate.swift */,
 				745ACE8E253303F7004D7D37 /* SceneDelegate.swift */,
 				745ACE90253303F7004D7D37 /* ContentView.swift */,
-				745ACEA125330412004D7D37 /* OrientationLockedController.swift */,
 				745ACEA425330417004D7D37 /* ClockView.swift */,
 				745ACE92253303F7004D7D37 /* Assets.xcassets */,
 				74CE3F0C257A9C8C00016FFB /* Media.xcassets */,
@@ -250,7 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74CE3F0E257A9C8C00016FFB /* Media.xcassets in Resources */,
+				7417A177257B5A580001C774 /* Media.xcassets in Resources */,
 				745ACEB725330548004D7D37 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,7 +428,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FlipClock/FlipClock.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1.5;
 				DEVELOPMENT_ASSET_PATHS = "\"FlipClock/Preview Content\"";
 				DEVELOPMENT_TEAM = CH6QR5SEAC;
 				ENABLE_PREVIEWS = YES;
@@ -441,6 +439,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hj.FlipClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
@@ -457,7 +456,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FlipClock/FlipClock.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1.5;
 				DEVELOPMENT_ASSET_PATHS = "\"FlipClock/Preview Content\"";
 				DEVELOPMENT_TEAM = CH6QR5SEAC;
 				ENABLE_PREVIEWS = YES;
@@ -468,6 +467,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hj.FlipClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
@@ -483,7 +483,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = FlipClockWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1.5;
 				DEVELOPMENT_TEAM = CH6QR5SEAC;
 				INFOPLIST_FILE = FlipClockWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -493,6 +493,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hj.FlipClock.FlipClockWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -509,7 +510,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = FlipClockWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1.5;
 				DEVELOPMENT_TEAM = CH6QR5SEAC;
 				INFOPLIST_FILE = FlipClockWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -519,6 +520,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hj.FlipClock.FlipClockWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

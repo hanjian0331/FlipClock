@@ -78,7 +78,7 @@ struct Card: View {
                 
                 Text(ampm)
                     .font(isWidget ? .body : .title)
-                    .foregroundColor(.red)
+                    .foregroundColor(.white)
                     .padding(ampm == "AM" ?
                         EdgeInsets(top: 0, leading: 0, bottom: geometry.size.height-offset, trailing: geometry.size.width-offset) :
                         EdgeInsets(top: geometry.size.height-offset, leading: 0, bottom: 0, trailing: geometry.size.width-offset)
@@ -164,25 +164,40 @@ extension VerticalAlignment {
 //    }
 //}
 
+extension Locale {
+    var is12HourTimeFormat: Bool {
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeStyle = .short
+        dateFormatter.dateStyle = .none
+        dateFormatter.locale = self
+        let dateString = dateFormatter.string(from: Date())
+        return dateString.contains(dateFormatter.amSymbol) || dateString.contains(dateFormatter.pmSymbol)
+    }
+}
+
 struct ClockWidgetView: View {
     let dateFormatHHMMA: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "en_US_POSIX")
-        formatter.dateFormat = "hhmma"
-        formatter.amSymbol = "AM"
-        formatter.pmSymbol = "PM"
+        if formatter.locale.is12HourTimeFormat {
+            formatter.locale = Locale(identifier: "en_US_POSIX")
+            formatter.dateFormat = "hhmma"
+            formatter.amSymbol = "AM"
+            formatter.pmSymbol = "PM"
+        } else {
+            formatter.dateFormat = "HHmm"
+        }
         return formatter
     }()
     
     var date: Date
 
     var body: some View {
-        let text = dateFormatHHMMA.string(from: Date())
+        let text = dateFormatHHMMA.string(from: date)
         let h1 = String(text.prefix(1))
         let h2 = String(text[text.index(text.startIndex, offsetBy: 1)...text.index(text.startIndex, offsetBy: 1)])
         let m1 = String(text[text.index(text.startIndex, offsetBy: 2)...text.index(text.startIndex, offsetBy: 2)])
         let m2 = String(text[text.index(text.startIndex, offsetBy: 3)...text.index(text.startIndex, offsetBy: 3)])
-        let ampm = String(text.suffix(2))
+        let ampm = text.count == 4 ? nil : String(text.suffix(2))
         
         
         HStack(spacing: 2) {
@@ -196,10 +211,14 @@ struct ClockWidgetView: View {
 struct ClockView: View {
     let dateFormatHHMMA: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "en_US_POSIX")
-        formatter.dateFormat = "hhmma"
-        formatter.amSymbol = "AM"
-        formatter.pmSymbol = "PM"
+        if formatter.locale.is12HourTimeFormat {
+            formatter.locale = Locale(identifier: "en_US_POSIX")
+            formatter.dateFormat = "hhmma"
+            formatter.amSymbol = "AM"
+            formatter.pmSymbol = "PM"
+        } else {
+            formatter.dateFormat = "HHmm"
+        }
         return formatter
     }()
     
@@ -214,7 +233,7 @@ struct ClockView: View {
         let h2 = String(text[text.index(text.startIndex, offsetBy: 1)...text.index(text.startIndex, offsetBy: 1)])
         let m1 = String(text[text.index(text.startIndex, offsetBy: 2)...text.index(text.startIndex, offsetBy: 2)])
         let m2 = String(text[text.index(text.startIndex, offsetBy: 3)...text.index(text.startIndex, offsetBy: 3)])
-        let ampm = String(text.suffix(2))
+        let ampm = text.count == 4 ? nil : String(text.suffix(2))
     
         
 
