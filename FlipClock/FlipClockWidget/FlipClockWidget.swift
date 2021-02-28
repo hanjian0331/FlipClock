@@ -55,6 +55,8 @@ struct FlipClockWidgetEntryView : View {
     @ViewBuilder
     var body: some View {
         switch family {
+        case .systemSmall:
+            DateWidgetView(date: entry.date)
         case .systemMedium:
             ClockWidgetView(date: entry.date)
         default:
@@ -77,7 +79,7 @@ struct FlipClockWidget: Widget {
         }
         .configurationDisplayName("Flip Clock Widget")
         .description("This is an flip clock widget.")
-        .supportedFamilies([.systemMedium])
+        .supportedFamilies([.systemSmall, .systemMedium])
     }
 }
 
@@ -86,6 +88,6 @@ struct FlipClockWidget_Previews: PreviewProvider {
         FlipClockWidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.black)
-            .previewContext(WidgetPreviewContext(family: .systemMedium))
+            .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

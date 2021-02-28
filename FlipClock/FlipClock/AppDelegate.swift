@@ -14,6 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        UserDefaults(suiteName: "group.com.hj.FlipClock")?.setValue(Locale.current.identifier, forKey: "local")
+        
         return true
     }
 

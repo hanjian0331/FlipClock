@@ -20,7 +20,6 @@ struct ContentView: View {
             date = Date()
         }
         .statusBar(hidden: true)
-//        .environmentObject(OrientationInfo())
     }
 }
 
