@@ -29,14 +29,15 @@ struct Provider: IntentTimelineProvider {
         let dateComponents = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute], from: currentDate)
         guard var date = Calendar.current.date(from: dateComponents) else { return }
         
-        for _ in 0 ..< 60*2 {
+        let totalTime = 15
+        for _ in 0 ..< totalTime * 2 {
             let entry = SimpleEntry(date: date, configuration: configuration)
             
             date += oneMinute
             entries.append(entry)
         }
 
-        let timeline = Timeline(entries: entries, policy: .after(currentDate+60*oneMinute))
+        let timeline = Timeline(entries: entries, policy: .after(currentDate + Double(totalTime) * oneMinute))
         completion(timeline)
     }
 }
@@ -57,12 +58,10 @@ struct FlipClockWidgetEntryView : View {
         switch family {
         case .systemSmall:
             DateWidgetView(date: entry.date)
-        case .systemMedium:
-            ClockWidgetView(date: entry.date)
+        case .systemLarge:
+            DateWidgetView(date: entry.date)
         default:
-            Text("韩")
-                .font(.custom("Helvetica Neu Bold", size: 100))
-            
+            ClockWidgetView(date: entry.date)
         }
     }
 }
@@ -79,7 +78,7 @@ struct FlipClockWidget: Widget {
         }
         .configurationDisplayName("Flip Clock Widget")
         .description("This is an flip clock widget.")
-        .supportedFamilies([.systemSmall, .systemMedium])
+//        .supportedFamilies([.systemSmall, .systemMedium])
     }
 }
 

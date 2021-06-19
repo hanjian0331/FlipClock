@@ -54,24 +54,23 @@ struct Card: View {
                 .frame(width: w, height: h, alignment: .trailing)
                 .padding(.leading, geometry.size.width-w)
             
-            let isWidget = geometry.size.width < 300
+            let magicNumer: CGFloat = 0.72
             if let ampm = ampm {
-                let offset: CGFloat = isWidget ? 35 : 70
-                
+                let offset = geometry.size.height / 4
                 Text(ampm)
-                    .font(isWidget ? .body : .title)
+                    .font(.system(size: geometry.size.width*0.191/2))
                     .foregroundColor(.white)
                     .padding(ampm == "AM" ?
-                        EdgeInsets(top: 0, leading: 0, bottom: geometry.size.height-offset, trailing: geometry.size.width-offset) :
-                        EdgeInsets(top: geometry.size.height-offset, leading: 0, bottom: 0, trailing: geometry.size.width-offset)
+                             EdgeInsets(top: 0, leading: 0, bottom: geometry.size.height-offset, trailing: geometry.size.width-offset*1.191) :
+                        EdgeInsets(top: geometry.size.height-offset, leading: 0, bottom: 0, trailing: geometry.size.width-offset*1.191)
                     )
             }
             
-            if isWidget, let week = week {
+            if let week = week {
                 Text(week)
-                    .font(.body)
+                    .font(.system(size: geometry.size.width*0.191/2))
                     .foregroundColor(.red)
-                    .padding(EdgeInsets(top: 8, leading: 0, bottom: geometry.size.height-35, trailing: 0))
+                    .padding(EdgeInsets(top: 0, leading: 0, bottom: geometry.size.height*magicNumer, trailing: 0))
             }
 
         }
@@ -121,7 +120,7 @@ extension Locale {
 struct DateWidgetView: View {
     let dateFormatDD: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "ddE"
+        formatter.dateFormat = "ddEEEE"
         if let language = Locale.preferredLanguages.first {
             formatter.locale = Locale(identifier: language)
         }
@@ -239,6 +238,7 @@ struct ClockView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ContentView()
+//            Card(h1:"1", h2:"3", week:"PM")
         }
     }
 }
